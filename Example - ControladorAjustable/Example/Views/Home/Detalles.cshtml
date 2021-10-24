@@ -1,0 +1,30 @@
+﻿<html>
+
+<head>
+</head>
+
+<body>
+
+    <p>
+        <h1>
+            @ViewData["Cabecera"]
+        </h1>
+    </p>
+@{
+    var amigo = ViewData["Amigo"] as Example.Models.Amigo;
+} 
+<div>
+    Nombre:@amigo.Nombre
+</div>
+<div>
+    Id:@amigo.Id
+</div>
+<div>
+    Ciudad:@amigo.Ciudad
+</div>
+<div>
+    Email:@amigo.Email
+</div>
+</body>
+
+</html>

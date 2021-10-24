@@ -1,0 +1,31 @@
+﻿@model List<Example.Models.Amigo>
+<html>
+
+<head>
+</head>
+
+<body>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Ciudad</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        @foreach (var amigo in Model)
+            {
+    <tr>
+        <td>@amigo.Id</td>
+        <td>@amigo.Nombre</td>
+        <td>@amigo.Ciudad</td>
+        <td>@amigo.Email</td> 
+    </tr>
+            }
+
+    </tr>
+
+
+</table>
+</body>
+</html>
